@@ -34,5 +34,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## 問題点
-- リモート上でディレクトリが一つ深くなっている
-- emotionの再インストール(node_modulesに残骸あり)
+
+- emotion の再インストール(node_modules に残骸あり)
