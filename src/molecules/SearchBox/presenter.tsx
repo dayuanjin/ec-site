@@ -13,6 +13,7 @@ export const Presenter = (props: Props) => {
           <SearchIcon />
         </InputAdornment>
       }
+      placeholder="キーワード検索"
       style={styles.root}
       {...props}
     />
