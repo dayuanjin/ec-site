@@ -3,7 +3,7 @@ import {
   HandleMouseOut,
   HandleMouseOver,
   useOpenPopper,
-} from "../../libs/hooks/useOpenPopper";
+} from "../../../libs/hooks/useOpenPopper";
 
 export type Hooks = {
   favoriteAnchorEl: AnchorEl;

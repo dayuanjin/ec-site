@@ -1,4 +1,4 @@
-import { AnchorEl } from "../../libs/hooks/useOpenPopper";
+import { AnchorEl } from "../../../libs/hooks/useOpenPopper";
 import { Presenter } from "./presenter";
 
 export type Props = {
