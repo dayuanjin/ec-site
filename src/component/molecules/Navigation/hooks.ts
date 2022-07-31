@@ -4,8 +4,12 @@ import {
   HandleMouseOver,
   useOpenPopper,
 } from "../../../libs/hooks/useOpenPopper";
+import { useRouter } from "../../../libs/hooks/useRouter";
+
+export type HandleClickLoginButton = () => void;
 
 export type Hooks = {
+  handleClickLoginButton: HandleClickLoginButton;
   favoriteAnchorEl: AnchorEl;
   isOpenFavoritePopper: boolean;
   handleMouseOverFavorite: HandleMouseOver;
@@ -21,6 +25,10 @@ export type Hooks = {
 };
 
 export const useHooks = (): Hooks => {
+  const router = useRouter();
+  const handleClickLoginButton = () => {
+    router.push("/login");
+  };
   const {
     anchorEl: favoriteAnchorEl,
     isOpen: isOpenFavoritePopper,
@@ -40,6 +48,7 @@ export const useHooks = (): Hooks => {
     handleMouseOut: handleMouseOutItem,
   } = useOpenPopper();
   return {
+    handleClickLoginButton,
     favoriteAnchorEl,
     isOpenFavoritePopper,
     handleMouseOverFavorite,

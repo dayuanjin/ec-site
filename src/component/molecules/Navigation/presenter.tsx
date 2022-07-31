@@ -1,18 +1,18 @@
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { IconButton } from "../../atoms/IconButton";
 import { styles } from "./styles";
 import CheckroomIcon from "@mui/icons-material/Checkroom";
-import { Login } from "../../atoms/Login";
 import {
   AnchorEl,
   HandleMouseOver,
   HandleMouseOut,
-} from "../../libs/hooks/useOpenPopper";
+} from "../../../libs/hooks/useOpenPopper";
+import { CartPopper } from "../CartPopper";
 import { FavoritePopper } from "../FavoritePopper";
 import { ItemPopper } from "../ItemPopper";
-import { CartPopper } from "../CartPopper";
+import { Button } from "@mui/material";
+import { HandleClickLoginButton } from "./hooks";
 
 export type Props = {
   favoriteAnchorEl: AnchorEl;
@@ -27,6 +27,7 @@ export type Props = {
   isOpenItemPopper: boolean;
   handleMouseOverItem: HandleMouseOver;
   handleMouseOutItem: HandleMouseOut;
+  handleClickLoginButton: HandleClickLoginButton;
 };
 
 export const Presenter = (props: Props) => {
@@ -50,7 +51,20 @@ export const Presenter = (props: Props) => {
       >
         <ShoppingCartOutlinedIcon />
       </IconButton>
-      <Login />
+      <Button
+        sx={{
+          display: "flex",
+          flexShrink: 1,
+          color: "#333",
+          "&.MuiButton-root:hover": {
+            backgroundColor: "#f7f6f5",
+          },
+        }}
+        onClick={props.handleClickLoginButton}
+        aria-label="ログイン"
+      >
+        <span>ログイン</span>
+      </Button>
       <CartPopper
         open={props.isOpenFavoritePopper}
         anchorEl={props.favoriteAnchorEl}

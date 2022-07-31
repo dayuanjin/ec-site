@@ -1,5 +1,7 @@
+import { useHooks } from "./hooks";
 import { Presenter } from "./presenter";
 
 export const Header = () => {
-  return <Presenter />;
+  const { handleClickTopButton } = useHooks();
+  return <Presenter handleClickTopButton={handleClickTopButton} />;
 };

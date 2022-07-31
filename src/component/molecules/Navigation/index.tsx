@@ -15,9 +15,11 @@ export const Navigation = () => {
     isOpenItemPopper,
     handleMouseOverItem,
     handleMouseOutItem,
+    handleClickLoginButton,
   } = useHooks();
   return (
     <Presenter
+      handleClickLoginButton={handleClickLoginButton}
       favoriteAnchorEl={favoriteAnchorEl}
       isOpenFavoritePopper={isOpenFavoritePopper}
       handleMouseOverFavorite={handleMouseOverFavorite}
