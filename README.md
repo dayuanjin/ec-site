@@ -36,3 +36,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## 問題点
 
 - emotion の再インストール(node_modules に残骸あり)
+- 縮小で文字が改行される
+
+## issue
+
+- メインページ
+- 新規登録ページ
+- パスワード再設定ページ
+- お気に入りページ
+- カートページ（決済ページ決済）
