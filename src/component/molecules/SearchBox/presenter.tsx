@@ -1,7 +1,6 @@
 import { Input } from "../../atoms/Input";
 import SearchIcon from "@mui/icons-material/Search";
 import { InputAdornment, InputProps } from "@mui/material";
-import { styles } from "./styles";
 
 export type Props = InputProps;
 
@@ -14,7 +13,13 @@ export const Presenter = (props: Props) => {
         </InputAdornment>
       }
       placeholder="キーワード検索"
-      style={styles.root}
+      disableUnderline
+      style={{
+        minWidth: "300px",
+        padding: "0 6px",
+        borderRadius: "4px",
+        backgroundColor: "#fff",
+      }}
       {...props}
     />
   );
