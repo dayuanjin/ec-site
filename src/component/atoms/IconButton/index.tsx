@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import {
   HandleMouseOut,
   HandleMouseOver,
@@ -9,15 +9,22 @@ export type Props = {
   children: ReactNode;
   handleMouseOver: HandleMouseOver;
   handleMouseOut: HandleMouseOut;
+  popperKey: string;
 };
 
-export const IconButton = (props: Props) => {
+export const IconButton: FC<Props> = ({
+  children,
+  handleMouseOver,
+  handleMouseOut,
+  popperKey,
+}) => {
   return (
     <Presenter
-      handleMouseOver={props.handleMouseOver}
-      handleMouseOut={props.handleMouseOut}
+      handleMouseOver={handleMouseOver}
+      handleMouseOut={handleMouseOut}
+      popperKey={popperKey}
     >
-      {props.children}
+      {children}
     </Presenter>
   );
 };

@@ -13,41 +13,45 @@ import { FavoritePopper } from "../FavoritePopper";
 import { ItemPopper } from "../ItemPopper";
 import { Button } from "@mui/material";
 import { HandleClickLoginButton } from "./hooks";
+import { FC } from "react";
 
 export type Props = {
-  favoriteAnchorEl: AnchorEl;
-  isOpenFavoritePopper: boolean;
-  handleMouseOverFavorite: HandleMouseOver;
-  handleMouseOutFavorite: HandleMouseOut;
-  cartAnchorEl: AnchorEl;
-  isOpenCartPopper: boolean;
-  handleMouseOverCart: HandleMouseOver;
-  handleMouseOutCart: HandleMouseOut;
-  itemAnchorEl: AnchorEl;
-  isOpenItemPopper: boolean;
-  handleMouseOverItem: HandleMouseOver;
-  handleMouseOutItem: HandleMouseOut;
+  anchorEl: AnchorEl;
+  isOpen: boolean;
+  handleMouseOver: HandleMouseOver;
+  handleMouseOut: HandleMouseOut;
   handleClickLoginButton: HandleClickLoginButton;
+  popperKey: string;
 };
 
-export const Presenter = (props: Props) => {
+export const Presenter: FC<Props> = ({
+  anchorEl,
+  isOpen,
+  handleMouseOver,
+  handleMouseOut,
+  handleClickLoginButton,
+  popperKey,
+}) => {
   return (
     <div style={styles.root}>
       <IconButton
-        handleMouseOver={props.handleMouseOverItem}
-        handleMouseOut={props.handleMouseOutItem}
+        handleMouseOver={handleMouseOver}
+        handleMouseOut={handleMouseOut}
+        popperKey="item"
       >
         <CheckroomIcon />
       </IconButton>
       <IconButton
-        handleMouseOver={props.handleMouseOverFavorite}
-        handleMouseOut={props.handleMouseOutFavorite}
+        handleMouseOver={handleMouseOver}
+        handleMouseOut={handleMouseOut}
+        popperKey="favorite"
       >
         <FavoriteBorderIcon />
       </IconButton>
       <IconButton
-        handleMouseOver={props.handleMouseOverCart}
-        handleMouseOut={props.handleMouseOutCart}
+        handleMouseOver={handleMouseOver}
+        handleMouseOut={handleMouseOut}
+        popperKey="cart"
       >
         <ShoppingCartOutlinedIcon />
       </IconButton>
@@ -60,23 +64,20 @@ export const Presenter = (props: Props) => {
             backgroundColor: "#f7f6f5",
           },
         }}
-        onClick={props.handleClickLoginButton}
+        onClick={handleClickLoginButton}
         aria-label="ログイン"
       >
         <span>ログイン</span>
       </Button>
-      <CartPopper
-        open={props.isOpenFavoritePopper}
-        anchorEl={props.favoriteAnchorEl}
-      ></CartPopper>
-      <FavoritePopper
-        open={props.isOpenCartPopper}
-        anchorEl={props.cartAnchorEl}
-      ></FavoritePopper>
-      <ItemPopper
-        open={props.isOpenItemPopper}
-        anchorEl={props.itemAnchorEl}
-      ></ItemPopper>
+      {popperKey === "item" && (
+        <ItemPopper open={isOpen} anchorEl={anchorEl}></ItemPopper>
+      )}
+      {popperKey === "favorite" && (
+        <FavoritePopper open={isOpen} anchorEl={anchorEl}></FavoritePopper>
+      )}
+      {popperKey === "cart" && (
+        <CartPopper open={isOpen} anchorEl={anchorEl}></CartPopper>
+      )}
     </div>
   );
 };

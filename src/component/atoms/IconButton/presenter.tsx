@@ -1,25 +1,31 @@
 import { IconButton } from "@mui/material";
-import { ReactNode } from "react";
-import {
+import { FC, ReactNode } from "react";
+import type {
   HandleMouseOut,
   HandleMouseOver,
-} from "../../libs/hooks/useOpenPopper";
+} from "../../../libs/hooks/useOpenPopper";
 import { styles } from "./styles";
 
 export type Props = {
   children: ReactNode;
   handleMouseOver: HandleMouseOver;
   handleMouseOut: HandleMouseOut;
+  popperKey: string;
 };
 
-export const Presenter = (props: Props) => {
+export const Presenter: FC<Props> = ({
+  children,
+  handleMouseOver,
+  handleMouseOut,
+  popperKey,
+}) => {
   return (
     <IconButton
-      onMouseOver={props.handleMouseOver}
-      onMouseOut={props.handleMouseOut}
+      onMouseOver={(e) => handleMouseOver(e, popperKey)}
+      onMouseOut={handleMouseOut}
       sx={styles.root}
     >
-      {props.children}
+      {children}
     </IconButton>
   );
 };
