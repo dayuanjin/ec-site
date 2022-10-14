@@ -1,0 +1,148 @@
+{
+  "goodsList": [
+    {
+      "id": "0",
+      "name": "Wide straight slacks/ワイドストレートスラックスパンツ",
+      "price": 9900,
+      "category": "スラックス",
+      "brand": "soerte",
+      "url": "/goodsImage/0.jpg"
+    },
+    {
+      "id": "1",
+      "name": "【WYM LIDNM】HEAVY OZ WIDE DENIM SET-UP",
+      "price": 11000,
+      "category": "セットアップ",
+      "brand": "WYM LIDNM",
+      "url": "/goodsImage/1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "《ユニセックスアイテム》アブストラクトレーザー1タックデニムワイドパンツ【MAISON SPECIAL/メゾンスペシャル】",
+      "price": 17600,
+      "category": "デニムパンツ",
+      "brand": "MAISON SPECIAL",
+      "url": "/goodsImage/2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Oversize shaggy cardigan / オーバーサイズシャギーカーディガン",
+      "price": 13200,
+      "category": "カーディガン/ボレロ",
+      "brand": "soerte",
+      "url": "/goodsImage/3.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Over size 6B assort blazer / オーバーサイズ６ボタンアソートブレザー",
+      "price": 17600,
+      "category": "テーラードジャケット",
+      "brand": "soerte",
+      "url": "/goodsImage/4.jpg"
+    },
+    {
+      "id": "5",
+      "name": "《ユニセックスアイテム》TWEEDYプライムオーバークルーネックニットプルオーバー【MAISON SPECIAL/メゾンスペシャル】",
+      "price": 16500,
+      "category": "ニット/セーター",
+      "brand": "MAISON SPECIAL",
+      "url": "/goodsImage/5.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Oversized Quilting Suede Shoulder Bag / オーバーサイズキルティングスウェードバッグ",
+      "price": 6600,
+      "category": "ショルダーバッグ",
+      "brand": "shiki tokyo",
+      "url": "/goodsImage/6.jpg"
+    },
+    {
+      "id": "7",
+      "name": "《ユニセックスアイテム》ヘビーウェイトスウェットプライムオーバーセーラーカラーハーフジッププルオーバー 【MAISON SPECIAL/メゾンスペシャル】",
+      "price": 16940,
+      "category": "スウェット",
+      "brand": "MAISON SPECIAL",
+      "url": "/goodsImage/7.jpg"
+    },
+    {
+      "id": "8",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "9",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "10",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "11",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "12",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "13",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "14",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "15",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "16",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    },
+    {
+      "id": "17",
+      "name": "<別注>MOHAIR BORDER KNIT CARDIGAN",
+      "price": 42900,
+      "category": "カーディガン/ボレロ",
+      "brand": "DISCOVERED",
+      "url": "/goodsImage/8.jpg"
+    }
+  ]
+}
