@@ -1,4 +1,3 @@
-import { Footer } from "../../organisms/Footer";
 import { Header } from "../../organisms/Header";
 import { Main } from "../../organisms/Main";
 
@@ -7,7 +6,6 @@ export const Presenter = () => {
     <>
       <Header />
       <Main />
-      <Footer />
     </>
   );
 };
