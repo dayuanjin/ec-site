@@ -8,7 +8,7 @@ export const styles = {
     display: "flex",
     gap: "20px",
     alignItems: "center",
-    backgroundColor: "#f7f6f5",
+    backgroundColor: "#e6e4e3",
     justifyContent: "space-between",
     padding: "0 120px",
   },

@@ -11,6 +11,7 @@ export const useHooks = (): Hooks => {
   const handleClickTopButton = () => {
     router.push("/");
   };
+
   return {
     handleClickTopButton,
   };

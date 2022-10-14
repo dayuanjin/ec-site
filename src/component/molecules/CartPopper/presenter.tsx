@@ -10,7 +10,7 @@ export type Props = {
 export const Presenter = (props: Props) => {
   return (
     <Popper open={props.open} anchorEl={props.anchorEl}>
-      <div style={styles.root}>お気に入りはありません。</div>
+      <div style={styles.root}>カートに商品はありません。</div>
     </Popper>
   );
 };
