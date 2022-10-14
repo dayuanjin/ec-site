@@ -17,7 +17,6 @@ export const useOpenPopper = () => {
   ) => {
     switch (key) {
       case "item":
-        console.log(key);
         setPopperKey(key);
         setAnchorEl(event.currentTarget);
         break;
