@@ -33,4 +33,4 @@ export const styles = {
     fontSize: "18px",
     fontWeight: 600,
   },
-};
+} as const;
