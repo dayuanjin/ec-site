@@ -14,4 +14,4 @@ export const styles = {
   list: {
     listStyleType: "none",
   },
-};
+} as const;
