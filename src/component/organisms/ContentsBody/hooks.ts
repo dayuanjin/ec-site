@@ -1,4 +1,3 @@
-import data from "../../../__mocks__/goodsList.json";
 import { collection, doc, getDocs, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import db from "../../../firebase";
